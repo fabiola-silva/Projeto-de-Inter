@@ -16,14 +16,16 @@
       <script src="<?php echo base_url("extras/js/");?>funcoes.js"></script>
 	  <script src="<?php echo base_url("extras/js/");?>jquery.js"></script>
 	  <script src="<?php echo base_url("extras/js/");?>cycle.js"></script>
+	  
       
-     
+	  
         
    </head>
    
      <body >
 	 
-        
+	 
+
           <div id="slides">
 			<img src="<?php echo base_url("extras/img/");?>foto1.jpg" alt="Essa imagem não pode ser exibida">
 			<img src="<?php echo base_url("extras/img/");?>foto2.jpg" alt="Essa imagem não pode ser exibida">

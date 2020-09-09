@@ -6,14 +6,14 @@ $this->load->view("cabecalho");
 
 
 
-  <form id="form_cadastro" name="cod" method="POST">
+  <form id="form_cadastro" name="cod" method="POST"  onsubmit="return validacao2()">
     <fieldset>
       <div id="pagina">
         <h1>Informação do Evento</h1>
 
         <label for="nome"> <b style="color:red;">*</b>Nome do evento: </label> <br>
         <input name="id" type="hidden" value="<?php echo $evento ?   $evento->id : ''; ?>" />
-        <input id="nome" type="text" name="nome_evento" size="30" maxlength="40" required="required" title="somente letra" pattern="[a-z-A-Z\s]+$" value="<?php echo $evento ?   $evento->nome_evento : ''; ?>" />
+        <input id="nome_evento" type="text" name="nome_evento" size="30" maxlength="40"  title="somente letra" pattern="[a-z-A-Z\s]+$" value="<?php echo $evento ?   $evento->nome_evento : ''; ?>" />
         <br>
         <label for="evento"> <b style="color:red;">*</b>Local do evento: </label> <br>
         <input id="evento" type="text" name="local" size="30" maxlength="40" required="required" title="somente letra" pattern="[a-z-A-Z\s]+$" value="<?php echo $evento ?   $evento->local : ''; ?>" />
@@ -23,7 +23,7 @@ $this->load->view("cabecalho");
         <br>
         <b style="color:red;">*</b>
         Data: <br>
-        <input id="Evento" type="text" name="data" value="<?php echo $evento ?    $evento->data : ''; ?>">
+        <input id="data" type="text" name="data" value="<?php echo $evento ?    $evento->data : ''; ?>">
         <br>
         <label for="tempo"> <b style="color:red;">*</b>Duração: </label><br>
         <input id="tempo" type="text" name="horario" value="<?php echo $evento ?  $evento->horario : ''; ?>">
@@ -39,6 +39,44 @@ $this->load->view("cabecalho");
     </fieldset>
 
   </form>
+
+
+  <script>
+   function validacao2(){
+       var nome = document.getElementById('nome_evento').value;
+       var rg = document.getElementById('RG').value;
+       var cpf = document.getElementById('CPF').value;
+       var telefone1 = document.getElementById('Telefone1').value;
+       var rua = document.getElementById('Rua').value;
+       var numero = document.getElementById('Numero').value;
+
+     if(nome == ''){
+       alert('nome obrigatorio ');
+       return false;
+     }
+      if (rg == '') {
+          alert('Nº do RG é obrigatorio');
+          return false;   
+      }
+    if (cpf == '') {
+         alert('Nº do CPF é obrigatorio');
+         return false;   
+     }
+     if (telefone1 == '') {
+         alert('Campo brigatorio: telefone1');
+         return false;   
+     }if (rua == '') {
+         alert('Nome da rua é obrigatorio');
+         return false;   
+     }if (numero == '') {
+         alert('Nº é obrigatorio');
+         return false;   
+     }
+  }
+
+</script> 
+
+
 <?php
 
 $this->load->view("rodape");

@@ -10,7 +10,7 @@ $this->load->view("cabecalho");
             <fieldset id="CorpoDoControle" style="background-color:turquoise ">
                 
                 
-                <h1 id="gerenciar">Estoque De Materiais</h1>
+                <h1 id="gerenciar">Estoque de Materiais</h1>
                 
                         <select name="material" >
                         <option  selected value ="Selecione">Selecione</option>
@@ -34,13 +34,13 @@ $this->load->view("cabecalho");
                         
                     </select>              
                     <div>
-                        <h3><b>Nome do Produto Recebido por Doação:</b></h3>
+                    <b style="color:red;">*</b>Nome do Produto Recebido por Doação:</b>
                 <input type="text" name="produto" maxlength="50" size="50">
                <br>
-                <b>Quantidade:</b><br>
+               <b style="color:red;">*</b>Quantidade:<br>
                 <input type="text" name="quant">
                 <br>
-                <b>Procedencia:</b><br>
+                <b style="color:red;">*</b>Procedencia:<br>
                 <input type="radio" name="procedencia" value="interno" checked>
                 <label >Internos</label>
                 <input type="radio"  name="procedencia" value="externo">
@@ -60,8 +60,10 @@ $this->load->view("cabecalho");
                 <br><br>
                 <fieldset style="background-color:turquoise ">
                 <h1><b>Doação em dinheiro</b></h1>
+                <b style="color:red;">*</b> Valor em dinheiro
                 <input id="doacao" type="text" name="doacao">
-                Procedencia:
+                <br>
+                <b style="color:red;">*</b>Procedencia:
                 <input type="radio" name="proced2" value="interno">
                 <label for="proced2">Interno</label>
                 <input type="radio" id="proced2" name="proced2" value="externo" checked >

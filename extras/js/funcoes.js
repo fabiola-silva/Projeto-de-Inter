@@ -4,3 +4,4 @@
 function closeAlert(){
 	document.getElementById('msgAlert').style.display="none";
 }
+

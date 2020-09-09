@@ -184,6 +184,8 @@ class Idosos extends CI_Controller
 	public function index()
 	{
 
+		// print_r($_POST);
+		// die();
 		$dados['estilo'] = "EstiloCadastro.css";
 		if (isset($_POST['cadastro_idoso'])) {
 			$nome = strip_tags(trim($_POST['nome']));
@@ -204,8 +206,8 @@ class Idosos extends CI_Controller
 				empty($cpf) &&
 				empty($telefone1) &&
 				empty($rua) &&
-				empty($numero) &&
-				empty($complemento)
+				empty($numero)
+				
 			) {
 				$dados['msgAlert'] = "ERRO: Preencha todos os campos!";
 			} else {
