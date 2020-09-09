@@ -12,7 +12,7 @@
       <meta name="description" content="Uma pagina para cadastro de idosos">
       <meta name="author" content="Equipe">
 	  <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/");?>estilo.css">
-      <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/").$estilo;?>">
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/")?>EstiloEvento.css">
       <script src="<?php echo base_url("extras/js/");?>funcoes.js"></script>
 	  <script src="<?php echo base_url("extras/js/");?>jquery.js"></script>
 	  <script src="<?php echo base_url("extras/js/");?>cycle.js"></script>
@@ -39,13 +39,15 @@
 			<script>$("#slides").cycle();</script>
 			<div id="menu">
 				<ul>
-					<li><a href="<?php echo base_url("index.php");?>/Idosos">Cadastro Idosos</a></li>
+					<li><a href="/Idosos">Cadastro Idosos</a></li>
 					
-					<li><a href="<?php echo base_url("index.php");?>/Idosos/gerenciar_estoque">Gerenciar Estoque</a></li>
+					<li><a href="/Idosos/gerenciar_estoque">Gerenciar Estoque</a></li>
 					
-					<li><a href="<?php echo base_url("index.php");?>/Idosos/eventos">Eventos</a></li>
+					<li><a href="/Idosos/eventos">Eventos</a></li>
+
+					<li><a href="/Idosos/eventos_selecionado">Selecionar Eventos</a></li>
 				</ul>
-				</div>
+			</div>
 			
 			<?php
 				if(isset($msgAlert)){
