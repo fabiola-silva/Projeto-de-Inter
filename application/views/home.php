@@ -62,10 +62,10 @@ $this->load->view("cabecalho");
                 <input type="submit" class="btn btn-lime"  name="cadastro_idoso" value="ENVIAR" />
         
             </fieldset>
-		</form>
+		    </form>
             <br><br>
 
-
+<!-- VAlidação dos campos do formulario de Cadastrar Idosos  -->
            
 <script>
    function validacao(){

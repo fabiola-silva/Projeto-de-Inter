@@ -30,7 +30,8 @@ class Consultas extends CI_Model {
 	
 	function cadastrar_idoso($nome,$rg,$cpf,$telefone1,$telefone2,$rua,$numero,$complemento,$sexo,$dependentes,$qts_dep){
 		return $this->db->query("INSERT INTO cadastro(nome,rg,cpf,telefone1,telefone2,rua,numero,complemento,sexo,dependentes,qtddependentes)
-		VALUES('$nome',$rg,$cpf,$telefone1,$telefone2,'$rua',$numero,'$complemento','$sexo',$dependentes,$qts_dep)");
+		VALUES('$nome',$rg,$cpf,$telefone1,'$telefone2','$rua',$numero,'$complemento','$sexo',$dependentes,$qts_dep)");
+		
 	}
 	
 }

@@ -186,8 +186,9 @@ class Idosos extends CI_Controller
 
 		// print_r($_POST);
 		// die();
-		$dados['estilo'] = "EstiloCadastro.css";
+		
 		if (isset($_POST['cadastro_idoso'])) {
+			
 			$nome = strip_tags(trim($_POST['nome']));
 			$rg = strip_tags(trim($_POST['rg']));
 			$cpf = strip_tags(trim($_POST['cpf']));
@@ -216,6 +217,7 @@ class Idosos extends CI_Controller
 				try {
 
 					$res = $this->consultas->cadastrar_idoso($nome, $rg, $cpf, $telefone1, $telefone2, $rua, $numero, $complemento, $sexo, $dependentes, $qts_dep);
+					
 					if ($res) {
 						$dados['msgAlert'] = "Cadastro realizado com sucesso";
 					}
@@ -226,7 +228,7 @@ class Idosos extends CI_Controller
 			}
 			$this->load->view('home', $dados);
 		} else {
-			$this->load->view('home', $dados);
+			$this->load->view('home');
 		}
 	}
 }

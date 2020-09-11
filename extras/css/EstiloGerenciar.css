@@ -4,16 +4,13 @@
         background-color: darkseagreen;
     }
 
-    #doacao{
-        position: relative;
-        top: 5px;  
-    }
-
-    #gerenciar{  
-        background-color: turquoise; /* Rcor da barra do nome: gerenciar estoque de doação */
+    
+    #gerenciar, #Doacao_dinheiro{  
+        /* background-color: turquoise; Rcor da barra do nome: gerenciar estoque de doação */
         font-size: 25px;
         font-family: Arial;
-		padding:10px;
+        padding:10px;
+        font-weight: 600;
     } 
   #form_cadastro{
 	  width:600px;

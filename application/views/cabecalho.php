@@ -7,12 +7,15 @@
 <html>
     
    <head>
-      <title>Cadastro do Idoso</title>
+      <title>Protetores Vida</title>
       <meta charset="UTF-8">
       <meta name="description" content="Uma pagina para cadastro de idosos">
       <meta name="author" content="Equipe">
 	  <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/");?>estilo.css">
-      <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/")?>EstiloEvento.css">
+	  <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/")?>EstiloEvento.css">
+	  <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/")?>EstiloCadastro.css">
+	  <link rel="stylesheet" type="text/css" href="<?php echo base_url("extras/css/")?>EstiloGerenciar.css">
+	  
       <script src="<?php echo base_url("extras/js/");?>funcoes.js"></script>
 	  <script src="<?php echo base_url("extras/js/");?>jquery.js"></script>
 	  <script src="<?php echo base_url("extras/js/");?>cycle.js"></script>
